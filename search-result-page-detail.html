@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>RoomMagnet</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <!-- Font Awesome for icons - see https://fontawesome.com/v4.7.0/cheatsheet/ -->
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Custom CSS - update this if you use a name other than style.css for the Sass-generated CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+            
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top mainNav">
+                <div class="container">
+                
+                    
+                        <a class="navbar-brand ml-0 logo" href="index.html" ><img src="images/roommagnetLOGO.gif" alt="roommagnet logo" class="img-fluid" width="300" height="300"></a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                  
+                    
+                    
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="nav nav-pills ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="search.html">Search</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >About Us</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item js-scroll-trigger" href="about-us.html">Who are we?</a>
+                                        <a class="dropdown-item js-scroll-trigger" href="about-us.html">Our Goals</a>
+                                        <a class="dropdown-item js-scroll-trigger" href="about-us.html">Frequently Asked Questions</a>
+                                        <a class="dropdown-item js-scroll-trigger" href="about-us.html">Our Policy</a>
+                                    </div>
+                                </li>
+                                </ul>
+                            
+                                <button class="nav-item btn loginBUTTON" type="button" data-toggle="modal" data-target="#loginModal">
+                                    <a class="nav-link" href="#">Login</a>
+                                 </button>   
+                                
+                        </div>  
+                     
+                </div>
+            </nav>
+        
+<!--LOGIN MODAL-->    
+                            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="roommagnetLoginModal" aria-hidden="true">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h4 class="modal-title" id="roommagnetLoginModal">Login</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form>
+                                          <div class="form-group">
+                                            <label for="roommagnetInputEmail1">Email address</label>
+                                            <input type="email" class="form-control form-control-lg" id="rommmagnetInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="roommagnetInputPassword1">Password</label>
+                                            <input type="password" class="form-control form-control-lg" id="roommagnetInputPassword1" placeholder="Password">
+                                          </div>
+                                            
+                                        <button type="submit" class="btn btn-md btn-info justify-content-center" id="createAccountButton">
+                                            <a href="#">Login </a> 
+                                        </button>    
+                                            
+                                        </form>
+                                      </div>
+                                        
+                                      <div class="modal-footer">
+                                          
+                                          <div class="row">
+                                              <div class="col-md-12">
+                                              <h5 class="modal-title" id="roommagnetLoginModal">Don't  have a Account?</h5>
+                                                  <h5 class="modal-title" id="roommagnetLoginModal">Sign up Today!</h5>      
+                                              </div>      
+                                          </div>
+                                          
+                                          <div class="row">
+                                              <div class="col-md-12">
+                                                  
+                                                <button class="btn btn-info" type="button" data-toggle="modal" data-target="#chooseAccountType" data-dimiss="modal">
+                                                Create Account
+                                                </button>      
+                                                  
+                                              </div>  
+                                          
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div> 
+<!--END OF LOGIN MOD-->
+    
+        
+        
+<!--PICK HOST OR TENANT MOD-->
+                
+                <div class="modal fade" id="chooseAccountType" tabindex="-1" role="dialog" aria-labelledby="roommagnetCreateAccountModal" aria-hidden="true">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h4 class="modal-title" id="chooseAccountType">Are you a </h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form>
+                                            
+                                           <a href="create-account.html"> <button type="submit" class="btn btn-info justify-content-center">Host</button></a>
+                                            
+                                         <a href="#"> <button type="submit" class="btn btn-info justify-content-center">Tenant</button></a>       
+                                            
+                                        </form>
+                                      </div>
+                                  </div>
+                                </div>
+                        </div>  
+<!--END OF PICK HOST OR TENANT MOD-->        
+<!--END OF NAVIGATION-->
+        
+        
+        
+        
+   
+        <div class="container-fluid searchPageDetailBodyContent">
+            
+            <section>
+                <div class="row pb-2">
+<!--BEGINNING OF FILTER AND SEARCH BAR-->                     
+                    <div class="col-md-12">
+    <!--FILTER BUTTON AND FILTER FORM-->                       
+                            <div class="form-row justify-content-center">
+                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="filteroptions" >Filter</button>
+ 
+        <!--BEGINNING OF FILTER FORM-->                        
+                                    <div class="dropdown-menu">
+                                        <form class="px-4 py-3">
+                                            <div class="form-group">
+                                                <div class="row ">
+                                                    <div class="col-sm">
+                                                        <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="filterPetFriendly">
+                                                        <label class="form-check-lable" for="filterPetFriendly">Pet friendly</label>
+                                                        </div>    
+
+                                                        <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="filterSportsFan">
+                                                        <label class="form-check-lable" for="filterSportsFan">Sports Fan</label>
+                                                        </div> 
+                                                    </div>    
+                                                </div>
+                                                    
+                                                <div class="row ">
+                                                    <div class="col-sm ">
+                                                        <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="filtermusicalfan">
+                                                        <label class="form-check-lable" for="filtermusicalfan">Musical Fan</label>
+                                                        </div> 
+
+                                                        <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="filterdogperson">
+                                                        <label class="form-check-lable" for="filterdogperson">Dog Person</label>
+                                                        </div> 
+                                                    </div>    
+                                                </div>  
+                                                
+                                                
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="filtermusicalfan">
+                                                        <label class="form-check-lable" for="filtermusicalfan">Musical Fan</label>
+                                                        </div> 
+
+                                                        <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="filterdogperson">
+                                                        <label class="form-check-lable" for="filterdogperson">Dog Person</label>
+                                                        </div> 
+                                                    </div>    
+                                                </div> 
+                                                    
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+<!--END OF FILTER BUTTON AND FILTER FORM-->
+                                
+<!--SEARCH BAR-->                                
+                                <div class="col-md-6 searchBar">
+                                    <input type="text" class="form-control form-control-lg" placeholder="search">
+                                </div>
+<!--END OF SEARCH BAR-->
+                            
+                                
+<!--BEGINNING OF SEARCH BUTTON-->                               
+                                <button type="submit" class="btn btn-info">Search</button>
+<!--END OF SERACH BUTTON-->                                
+                            </div>
+                    </div>    
+                </div>
+<!--END OF SEARCH BAR-->        
+            </section>
+<!--END OF FILTER AND SEARCH BAR -->        
+            
+            
+            
+<!--BREADCRUMBS-->
+            <section>    
+                 <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="breadLink">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="breadLink">Search Results</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Property Detail</li>
+                          
+                      </ol>
+                </nav>   
+            </section>    
+<!--END OF BREADCRUMBS-->  
+            
+            
+            
+<!--Propterty Detail-->            
+            <section>
+                <header class="propertyHeaderImage">
+                    <!--Background Image-->
+                </header>
+                <div class="row propertyPageDetailTitle">
+                    <div class="col-md-10">Kew Garderns</div>
+                    <div class="col-md-2"> <button class="btn favoriteHeartButton"> <i class="far fa-heart" ></i></button> </div>
+                </div>
+            
+            </section>
+
+            
+            <section>
+            <!--FIRST ROW-->
+                
+            <div class="row px-5 py-5"> 
+                <div class="col-md-8 ">
+                    <div class="col-md-8 card px-5 py-5">
+                        <div>
+                            <h4>About Property</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8 card px-5 py-5">
+                        <div>
+                            <h4>Amenities</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8 card px-5 py-5">
+                        <div>
+                            <h4>Images</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8 card px-5 py-5">
+                        <div>
+                            <h4>Local Information</h4>
+                        </div>
+                    </div>            
+                    
+                </div>  
+                
+                
+                <div class="col-md-4 ">
+                    <div class="px-5 py-5 card">
+                        <h4>Message Center</h4>
+                        <form>
+                        <div class="form-group">
+                                <label for="firstName">Name</label>
+                                <input type="text" class="form-control" id="#" aria-describedby="emailHelp" placeholder="Name">
+                        </div>        
+                            
+                        <div class="form-group messagebox">
+                            <label for="messagePerson">Message Host</label>
+                            <textarea class="form-control " id="messagePerson"> </textarea>
+                            
+                            <a href="#" class="btn btn-info mt-5">Send Message</a>
+                        </div>
+                    
+                        </form>
+                    </div>    
+                </div>
+                
+                
+            </div>
+                
+                  
+                
+            <!--END OF FIRST ROW-->                
+            </section>               
+            
+            
+            
+            
+            
+            
+            
+            
+<!--End of Property Detail-->            
+            
+        </div>            
+            
+            
+            
+
+
+<!--FOOTER-->         
+            <footer class="page-footer bg-primary container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                         <a href="index.html" ><img src="images/roommagnetLOGO.gif" alt="roommagnet logo" class="img-fluid"></a>
+                    </div>   
+                    
+                    <div class="col-md-10">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="about-us.html">About Us</a>
+                                </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#frequentlyAsked">Frequently Asked Questions</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#policy">Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                            </li>
+                            </ul>
+                    </div> 
+                </div> 
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Copyright &copy; 2019 Skyline Consulting. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+<!--END OF FOOTER--> 
+        
+<!--END OF PAGE-->
+        
+        
+        
+        
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
